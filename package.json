@@ -1,6 +1,6 @@
 {
   "name": "@strakelabs/openclaw-strake",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OpenClaw provider plugin — route inference through a Strake encrypted proxy endpoint.",
   "type": "module",
   "openclaw": {
@@ -18,7 +18,8 @@
   "files": [
     "index.ts",
     "openclaw.plugin.json",
-    "src"
+    "src",
+    "README.md"
   ],
   "repository": {
     "type": "git",
