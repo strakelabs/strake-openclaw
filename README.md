@@ -44,8 +44,10 @@ Add these to your shell profile or CI secrets. The token is what you generated i
 **3. Onboard:**
 
 ```bash
-openclaw onboard --strake-token $STRAKE_TOKEN
+openclaw onboard
 ```
+
+> **Note:** Pass `STRAKE_TOKEN` as an env var rather than `--strake-token` on the command line — OpenClaw detects it automatically at onboard time. The `--strake-token` flag isn't available until after the plugin is fully loaded.
 
 **4. Run:**
 
