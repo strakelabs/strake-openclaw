@@ -1,0 +1,41 @@
+{
+  "name": "@strakelabs/openclaw-strake",
+  "version": "1.0.0",
+  "description": "OpenClaw provider plugin — route inference through a Strake encrypted proxy endpoint.",
+  "type": "module",
+  "openclaw": {
+    "extensions": ["./index.ts"],
+    "providers": ["strake"],
+    "compat": {
+      "pluginApi": ">=2026.3.24-beta.2",
+      "minGatewayVersion": "2026.3.24-beta.2"
+    },
+    "build": {
+      "openclawVersion": "2026.3.24-beta.2",
+      "pluginSdkVersion": "2026.3.24-beta.2"
+    }
+  },
+  "files": [
+    "index.ts",
+    "openclaw.plugin.json",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strakelabs/strake-openclaw.git"
+  },
+  "bugs": {
+    "url": "https://github.com/strakelabs/community/issues"
+  },
+  "homepage": "https://strake.sh",
+  "license": "MIT",
+  "author": "Dalton Solutions, LLC",
+  "keywords": [
+    "openclaw",
+    "openclaw-plugin",
+    "strake",
+    "api-keys",
+    "proxy",
+    "openai"
+  ]
+}

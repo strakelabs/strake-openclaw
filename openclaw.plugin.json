@@ -1,0 +1,26 @@
+{
+  "id": "strake",
+  "name": "Strake",
+  "description": "Route OpenClaw inference through a Strake encrypted proxy endpoint. Your real API keys stay in the Strake vault — OpenClaw only ever sees a disposable bearer token.",
+  "providers": ["strake"],
+  "providerAuthEnvVars": {
+    "strake": ["STRAKE_TOKEN"]
+  },
+  "providerAuthChoices": [
+    {
+      "provider": "strake",
+      "method": "api-key",
+      "choiceId": "strake-token",
+      "choiceLabel": "Strake bearer token",
+      "groupId": "strake",
+      "groupLabel": "Strake",
+      "cliFlag": "--strake-token",
+      "cliOption": "--strake-token <token>",
+      "cliDescription": "Bearer token for your Strake endpoint"
+    }
+  ],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false
+  }
+}
